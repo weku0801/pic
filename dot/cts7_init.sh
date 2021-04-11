@@ -86,7 +86,7 @@ UK
 yum clean all
 yum makecache fast
 
-yum install git zsh bash-completion wget unzip tree tmux vim -y
+yum install git zsh bash-completion wget unzip tree tmux vim sysstat -y
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
