@@ -96,7 +96,7 @@ sed -i 's/(git/(git zsh-syntax-highlighting zsh-autosuggestions kubectl z sudo d
 echo 'DISABLE_AUTO_UPDATE="true"' >> ~/.zshrc
 echo 'HIST_STAMPS="yyyy-mm-dd"' >> ~/.zshrc
 echo 'alias vi="vim"' >> ~/.zshrc
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/g' .zshrc
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/g' ~/.zshrc
 
 chsh -s $(which zsh)
 `which zsh`
