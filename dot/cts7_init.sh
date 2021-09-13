@@ -98,5 +98,5 @@ echo 'HIST_STAMPS="yyyy-mm-dd"' >> ~/.zshrc
 echo 'alias vi="vim"' >> ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/g' ~/.zshrc
 
-chsh -s $(which zsh)
-`which zsh`
+chsh -s zsh
+zsh
