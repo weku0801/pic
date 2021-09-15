@@ -87,3 +87,4 @@ echo 'HIST_STAMPS="yyyy-mm-dd"' >> ~/.zshrc
 echo 'alias vi="vim"' >> ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="ys"/g' ~/.zshrc
 
+sed -i 's#root:/bin/bash#root:/bin/zsh#g' /etc/passwd
