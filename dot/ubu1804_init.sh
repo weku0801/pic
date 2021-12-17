@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # apt
-sudo cp -a /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo mv /etc/apt/sources.list{,.bak}
 
 sudo bash -c 'cat << UK > /etc/apt/sources.list
 # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to newer versions of the distribution.
