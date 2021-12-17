@@ -19,6 +19,9 @@ deb http://repo.huaweicloud.com/ubuntu bionic-security main restricted
 deb http://repo.huaweicloud.com/ubuntu bionic-security universe
 deb http://repo.huaweicloud.com/ubuntu bionic-security multiverse
 UK'
+
+sudo timedatectl set-timezone Asia/Shanghai
+
 sudo apt-get update
 
 sudo apt install git zsh wget unzip tree tmux vim sysstat -y
