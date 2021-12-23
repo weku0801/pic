@@ -9,42 +9,41 @@ sed -i  's-gpgcheck=1-gpgcheck=0-g' /etc/yum.conf
 mkdir /etc/yum.repos.d/bak
 mv /etc/yum.repos.d/*repo /etc/yum.repos.d/bak
 cat << UK > /etc/yum.repos.d/wuke.repo
-[tsinghua_base]
-name=tsinghua_base
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/7/os/x86_64/
-gpgcheck=0
-enabled=0
+# [tsinghua_base]
+# name=tsinghua_base
+# baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/7/os/x86_64/
+# gpgcheck=0
+# enabled=0
 
+# [tsinghua_updates]
+# name=tsinghua_updates
+# baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/7/updates/x86_64/
+# gpgcheck=0
+# enabled=0
 
-[tsinghua_updates]
-name=tsinghua_updates
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/7/updates/x86_64/
-gpgcheck=0
-enabled=0
+# [tsinghua_extras]
+# name=tsinghua_extras
+# baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/7/extras/x86_64/
+# gpgcheck=0
+# enabled=0
 
-[tsinghua_extras]
-name=tsinghua_extras
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos/7/extras/x86_64/
-gpgcheck=0
-enabled=0
+# [tsinghua_epel]
+# name=tsinghua_epel
+# baseurl=https://mirrors.tuna.tsinghua.edu.cn/epel/7/x86_64
+# gpgcheck=0
+# enabled=0
 
-[tsinghua_epel]
-name=tsinghua_epel
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/epel/7/x86_64
-gpgcheck=0
-enabled=0
+# [tsinghua_docker]
+# name=tsinghua_docker
+# baseurl=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/7/x86_64/stable
+# gpgcheck=0
+# enabled=0
 
-[tsinghua_docker]
-name=tsinghua_docker
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/centos/7/x86_64/stable
-gpgcheck=0
-enabled=0
-
-[tsinghua_kubernetes]
-name=tsinghua_kubernetes
-baseurl=https://mirrors.tuna.tsinghua.edu.cn/kubernetes/yum/repos/kubernetes-el7-x86_64
-gpgcheck=0
-enabled=1
+# [tsinghua_kubernetes]
+# name=tsinghua_kubernetes
+# baseurl=https://mirrors.tuna.tsinghua.edu.cn/kubernetes/yum/repos/kubernetes-el7-x86_64
+# gpgcheck=0
+# enabled=0
 
 [huawei_base]
 name=huawei_base
@@ -77,11 +76,17 @@ baseurl=https://repo.huaweicloud.com/docker-ce/linux/centos/7/x86_64/stable/
 gpgcheck=0
 enabled=1
 
-[huawei_kubernetes]
-name=huawei_kubernetes
-baseurl=https://repo.huaweicloud.com/kubernetes/yum/repos/kubernetes-el7-x86_64
+# [huawei_kubernetes]
+# name=huawei_kubernetes
+# baseurl=https://repo.huaweicloud.com/kubernetes/yum/repos/kubernetes-el7-x86_64
+# gpgcheck=0
+# enabled=0
+
+[aliyun_kubernetes]
+name=aliyun_kubernetes
+baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64
 gpgcheck=0
-enabled=0
+enabled=1
 UK
 yum clean all
 yum makecache fast
