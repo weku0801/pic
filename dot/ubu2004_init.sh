@@ -6,7 +6,7 @@ curl -fsSL https://repo.huaweicloud.com/docker-ce/linux/debian/gpg | sudo apt-ke
 curl https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | sudo apt-key add -
 curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
 
-mv /etc/apt/sources.list{,.bak}
+sudo mv /etc/apt/sources.list{,.bak}
 sudo bash -c 'cat < UK > /etc/apt/sources.list
 deb http://repo.huaweicloud.com/ubuntu focal main restricted
 deb http://repo.huaweicloud.com/ubuntu focal-updates main restricted
@@ -22,7 +22,7 @@ deb https://mirrors.aliyun.com/kubernetes/apt/ kubernetes-xenial main
 deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu focal stable
 UK'
 
-apt install git zsh bash-completion wget unzip tree tmux vim sysstat -y
+sudo apt install git zsh bash-completion wget unzip tree tmux vim sysstat -y
 
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
