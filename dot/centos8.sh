@@ -11,7 +11,7 @@ mv /etc/yum.repos.d/*repo /etc/yum.repos.d/bak
 cat << UK > /etc/yum.repos.d/wuke.repo
 [huawei_baseos]
 name=huawei_baseos
-baseurl=https://repo.huaweicloud.com/centos/8/BaseOS/x86_64/os/
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.2.2004/BaseOS/x86_64/os/
 enabled=1
 gpgcheck=0
 gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
@@ -19,14 +19,14 @@ gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
 #released updates
 [huawei_appstream]
 name=huawei_appstream
-baseurl=https://repo.huaweicloud.com/centos/8/AppStream/x86_64/os/
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.2.2004/AppStream/x86_64/os/
 enabled=1
 gpgcheck=0
 gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
 
 [huawei_powertools]
 name=huawei_powertools
-baseurl=https://repo.huaweicloud.com/centos/8/PowerTools/x86_64/os/
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.2.2004/PowerTools/x86_64/os/
 enabled=1
 gpgcheck=0
 gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
@@ -35,7 +35,7 @@ gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
 #additional packages that may be useful
 [huawei_extras]
 name=huawei_extras
-baseurl=https://repo.huaweicloud.com/centos/8/extras/x86_64/os/
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.2.2004/extras/x86_64/os/
 enabled=1
 gpgcheck=0
 gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
@@ -44,7 +44,7 @@ gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
 #additional packages that extend functionality of existing packages
 [huawei_centosplus]
 name=huawei_centosplus
-baseurl=https://repo.huaweicloud.com/centos/8/centosplus/x86_64/os/
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.2.2004/centosplus/x86_64/os/
 enabled=1
 gpgcheck=0
 gpgkey=https://repo.huaweicloud.com/centos/RPM-GPG-KEY-CentOS-Official
